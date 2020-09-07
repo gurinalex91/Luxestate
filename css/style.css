@@ -49,6 +49,10 @@
 		text-decoration: none;
 	}
 /*main*/
+	body{
+		color: #1f373d;
+		font-family: "Montserrat";
+	}
 	.wrapper{
 		width: 1120px;
 		margin: 0 auto;
@@ -62,28 +66,25 @@
 		justify-content: flex-start;
 	}
 	h2{
-		color: #1f373d;
-		font-family: "Montserrat";
 		font-size: 40px;
 		font-weight: 800;
 		line-height: 50px;
 		letter-spacing: -1px;
 	}
 	p{
-		color: #1f373d;
-		font-family: Montserrat;
 		font-size: 13px;
 		font-weight: 600;
 		line-height: 30px;
 		letter-spacing: -0.33px;
 	}
 	h3{
-		color: #1f373d;
-		font-family: "Montserrat";
 		font-size: 25px;
 		font-weight: 800;
 		line-height: 50px;
 		letter-spacing: -0.63px;
+	}
+	a{
+		color: #1f373d;
 	}
 	html, body{
 		scroll-behavior: smooth;
@@ -99,6 +100,7 @@
 		}
 		body{
 			text-align: center;
+
 		}
 	}
 /*header*/
@@ -106,8 +108,6 @@
 		padding: 37px 0;
 	}
 	header .logo a{
-		color: #1f373d;
-		font-family: "Montserrat", sans-serif;
 		font-size: 25px;
 		font-weight: 600;
 		line-height: 27px;
@@ -115,8 +115,6 @@
 	}
 	header a{
 		display: block;
-		color: #1f373d;
-		font-family: Montserrat;
 		font-size: 13px;
 		font-weight: 600;
 	}
@@ -266,8 +264,6 @@
 	}
 	h1{
 		width: 600px;
-		color: #1f373d;
-		font-family: "Montserrat";
 		font-size: 62px;
 		font-weight: 800;
 		line-height: 78px;
@@ -285,40 +281,40 @@
 	.title-img img{
 		position: relative;
 	}
-	.info{
+	.info-box{
 		position: absolute;
-		bottom: 3px;
+		bottom: 30px;
 		right: 0;
-		padding: 30px;
-		background:  #ffcc01;
 	}
-	.info a{
-		color: #1f373d;
-		font-family: "Montserrat";
+	.info{
+		padding: 30px 50px 30px 115px;
+		background:  #ffcc01;
 		font-size: 18px;
 		font-weight: 600;
 		line-height: 27px;
 		letter-spacing: -0.45px;
-		padding-left: 50px;
 		position: relative;
-		margin-right: 60px;
 	}
-	.info a:first-child:before{
+	.info-phone{
+		margin-right: -4px;
+		padding-right: 0;
+	}
+	.info-phone:before{
 		content: '';
 		width: 25px;
 		height: 25px;
 		background: url(../images/phone.svg);
 		position: absolute;
-	    left: 0;
+	    left: 60px;
 	    top: calc(50% - 12px);
 	}
-	.info a:last-child:before{
+	.info-location:before{
 		content: '';
 		width: 20px;
 		height: 27px;
 		background: url(../images/location.svg);
 		position: absolute;
-	    left: 0;
+	    left: 60px;
 	    top: calc(50% - 13px);
 	}
 	.info a:hover{
@@ -330,13 +326,12 @@
 		bottom: 220px;
 		z-index: 5;
 	}
-	.form input[type="search"]{
+	.form .search{
 		border: none;
 	    outline: none;
 	    background: url(../images/search.svg) no-repeat 27px 50% #ffffff;
 		padding: 20px 0 24px 57px;
 	    color: #919eb1;
-	    font-family: "Montserrat";
 	    font-size: 15px;
 	    font-weight: 400;
 	    line-height: 27px;
@@ -349,8 +344,6 @@
 		outline: none;
 		background: #ffcc01;
 		padding: 20px 30px 24px;
-		color: #1f373d;
-		font-family: Montserrat;
 		font-size: 15px;
 		font-weight: 600;
 		line-height: 27px;
@@ -368,7 +361,6 @@
 		left: -50px;
 		transform: rotate(-90deg);
 		color: #919eb1;
-		font-family: Montserrat;
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 27px;
@@ -409,14 +401,13 @@
 			bottom: 20%;
 		}
 		.info{
-			padding: 15px;
+			padding: 15px 30px 15px 90px;
 		}
 		.title .wrapper {
 		    padding-bottom: 470px;
 		}
-		.info a{
-			margin-right: 15px;
-			padding-left: 30px;
+		.info-box{
+			bottom: 15px;
 		}
 
 	}
@@ -431,27 +422,27 @@
 		.title-img{
 			position: relative;
 		}
-		.info{
+		.info-box{
 			position: static;
 		}
-		.info a {
-		    margin: 10px;
+		.info{
+		    margin: 0;
 		    display: block;
 		    text-align: center;
 		}
-		.title .form input[type="search"]{
-			width: 68%;
+		.title .form .search{
+			width: 60%;
 			border: 1px solid #919eb1;
 		}
-		.title .form input[type="submit"]{
+		.title .form .button-yellow{
 			padding: 21px 30px 25px;
 		}
 		.title .wrapper {
-		    padding-bottom: 80px;
+		    padding-bottom: 0;
 		}
 		.title .form{
-			bottom: 0;
-			left: calc(50% - 180px);
+			position: static;
+			margin: 10px auto;
 		}
 	}
 	@media screen and (max-width: 320px){
@@ -460,11 +451,10 @@
 		    top: 20%;
    			line-height: 30px;
    		}
-   		.title .form input[type="search"]{
-   			width: 60%;
+   		.title .form .search{
    			padding: 15px 0 15px 35px;
    		}
-   		.title .form input[type="submit"]{
+   		.title .form .button-yellow{
 			padding: 16px 20px 16px;
 		}
 		.title .form{
@@ -490,7 +480,6 @@
 	}
 	.statistics .counter span{
 		color: #ffcc01;
-		font-family: "Montserrat";
 		font-size: 40px;
 		font-weight: 800;
 		line-height: 50px;
@@ -572,9 +561,8 @@
 		line-height: 27px;
 		font-size: 15px;
 	}
-	.card-body .yellow{
+	.card-body .yellow-font{
 		color: #ffcc01;
-		font-family: "Montserrat";
 		font-size: 18px;
 		font-weight: 800;
 		line-height: 50px;
@@ -582,7 +570,6 @@
 	}
 	.card-bottom .bot-r{
 		color: #919eb1;
-		font-family: Montserrat;
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 50px;
@@ -614,8 +601,6 @@
 	}
 	.apartments-bottom-btn{
 		background: #fff;
-		color: #1f373d;
-		font-family: Montserrat;
 		font-size: 15px;
 		font-weight: 400;
 		line-height: 27px;
@@ -649,7 +634,7 @@
 		.apartments .card-item:last-child, .apartments .card-item:nth-child(3), .apartments .card-item:nth-child(4), .apartments .card-item:nth-child(5){
 			display: none;
 		}
-		.apartments .form input[type="search"]{
+		.apartments .form .search{
 			width: 275px;
 		}
 		
@@ -661,7 +646,7 @@
 		.apartments .flexbox{
 			flex-wrap: wrap;
 		}
-		.apartments .form input[type="search"] {
+		.apartments .form .search {
 		    width: 65%;
 		}
 		.apartments .form{
@@ -681,11 +666,11 @@
 		}
 	}
 	@media screen and (max-width: 320px){
-		.form input[type="search"]{
+		.form .search{
 			background: url(../images/search.svg) no-repeat 13px 50% #ffffff;
    			padding: 15px 0 15px 40px;
 		}
-		.form input[type="submit"]{
+		.form .button-yellow{
 			padding: 15px 20px 15px;
 		}
 	}
@@ -706,8 +691,6 @@
 		padding-bottom: 50px;
 	}
 	.step .big{
-		color: #1f373d;
-		font-family: Montserrat;
 		font-size: 150px;
 		font-weight: 600;
 		margin-top: -50px;
@@ -715,8 +698,6 @@
    		display: block;
 	}
 	.step h5{
-		color: #1f373d;
-		font-family: "Montserrat";
 		font-size: 18px;
 		font-weight: 600;
 		line-height: 63px;
@@ -732,8 +713,6 @@
 	.step a{
 		margin-left: 75px;
 		padding-bottom: 12px;
-		color: #1f373d;
-		font-family: "Montserrat";
 		font-size: 13px;
 		font-weight: 600;
 		line-height: 30px;
@@ -866,28 +845,28 @@
 		width: 365px;
 		margin: 30px 0 50px;
 	}
-	.agents a{
+	.agents .social{
 		width: 20px;
 		height: 20px;
 		background: url(../images/css_sprites.png)  -84px -10px;
 		margin-right: 25px;
 	}
-	.agents a+a{
+	.agents .social-twitter{
 		background-position: -10px -46px;
 	}
-	.agents a+a+a{
+	.agents .social-hz{
 		background-position: -10px -10px;
 	}
-	.agents .yellow{
+	.agents .yellow-font{
 		font-size: 15px;
 	}
-	.agents a:hover{
+	.agents .social-facebook:hover{
 		background-position: -112px -10px;
 	}
-	.agents a+a:hover{
+	.agents .social-twitter:hover{
 		background-position: -46px -46px;
 	}
-	.agents a+a+a:hover{
+	.agents .social-hz:hover{
 		background-position: -47px -10px;
 	}
 	.agents .card-body{
@@ -915,7 +894,7 @@
 		.agents .wrapper>p{
 			margin: 0;
 		}
-		.agents a{
+		.agents .social{
 			margin-right: 10px;
 		}
 	}
@@ -929,11 +908,11 @@
 		}
 	}
 	@media screen and (max-width: 375px){
-		.agents .card-body .yellow{
+		.agents .card-body .yellow-font{
 			line-height: 1;
 			padding-bottom: 10px;
 		}
-		.agents a{
+		.agents .social{
 			margin-right: 5px;
 		}
 	}
@@ -944,11 +923,10 @@
 	.pos-rel{
 		position: relative;
 	}
-	.adds .info{
-		bottom: -43px;
-		right: calc(50% - 175px);
+	.adds .info-box{
+		bottom: -13px;
+		right: calc(50% - 173px);
 		padding-right: 0;
-   		padding-left: 55px;
 	}
 	.adds p{
 		width: 465px;
@@ -959,15 +937,14 @@
 	.second-box{
 		text-align: right;
 	}
-	.second-box .info{
-		right: -55px;
-		bottom: -30px;
+	.second-box .info{	
+	    right: -150px;
+	    bottom: 15px;
 	}
 	.button-dark{
 		padding: 30px 50px;
 		background: #1f373d;
 		color: #ffffff;
-		font-family: "Montserrat";
 		font-size: 18px;
 		font-weight: 600;
 		line-height: 27px;
@@ -1033,19 +1010,22 @@
 		color: #fff;
 	}
 	.subscribe-input{
-		padding: 20px 250px 20px 30px;
+		padding: 20px 0 20px 30px;
 		background: #fff;
 		color: #919eb1;
-		font-family: Montserrat;
 		font-size: 15px;
 		font-weight: 400;
 		line-height: 27px;
 		letter-spacing: -0.38px;
-		position: relative;
 		border: none;
 		outline: none;
+		vertical-align: middle;
+		width: 380px;
 	}
 	.button-arrow{
+		position: relative;
+	}
+	.button-arrow:before{
 		content: '';
 		position: absolute;
 		right: 30px;
@@ -1054,7 +1034,7 @@
 		height: 1px;
 		background: #1f373d;
 	}
-	footer .footer-top a:after{
+	.button-arrow:after{
 		content: '';
 		position: absolute;
 		right: 30px;
@@ -1065,6 +1045,15 @@
 		border-right: 1px solid #1f373d;
 		transform: rotate(45deg);
 	}
+	#button-arrow{
+		padding: 26px 45px;
+	    background: #fff;
+	    border: none;
+	    outline: none;
+	    vertical-align: middle;
+	    margin-left: -10px;
+	    cursor: pointer;
+	}
 	.footer-top{
 		border-bottom: 2px solid #919eb1;
 		padding-bottom: 50px;
@@ -1072,7 +1061,6 @@
 	}
 	.footer-bottom .logo{
 		color: #ffffff;
-		font-family: "Montserrat";
 		font-size: 25px;
 		font-weight: 800;
 		line-height: 27px;
@@ -1090,7 +1078,6 @@
 	}
 	.footer-bottom>div>ul>li{
 		color: #919eb1;
-		font-family: Montserrat;
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 27px;
@@ -1103,7 +1090,6 @@
 	}
 	.footer-bottom ul a{
 		color: #ffffff;
-		font-family: Montserrat;
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 27px;
@@ -1130,11 +1116,8 @@
 		    padding-bottom: 10px;
 		    margin-bottom: 20px;
 		}
-		footer .footer-top a{
-			padding: 20px 30px;
-		}
-		footer .footer-top a:before, footer .footer-top a:after{
-			display: none;
+		.subscribe-input{
+			width: 190px;
 		}
 		.footer-bottom p{
 			margin-top: 20px;
@@ -1147,6 +1130,12 @@
 		}
 	}
 	@media screen and (max-width: 480px){
+		#button-arrow, .button-arrow{
+			display: none;
+		}
+		.subscribe-input{
+			padding: 10px;
+		}
 		.footer-bottom{
 			flex-direction: column-reverse;
 		}
@@ -1176,5 +1165,16 @@
 		}
 		.footer-bottom ul>li>ul{
 			margin: 0 0 15px;
+		}
+		.subscribe-input{
+			padding: 10px 3px;
+		}
+		footer .form{
+			margin-left: 5px;
+		}
+	}
+	@media screen and (max-width: 320px){
+		footer .form{
+			margin-left: 0;
 		}
 	}

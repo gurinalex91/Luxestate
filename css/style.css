@@ -251,8 +251,6 @@
 		.header-buttons .button{
 			margin-left: 0;
 		}
-
-		
 	}
 /*title*/
 	.title{
@@ -361,28 +359,6 @@
 	.form-btn:hover{
 		color: #fff
 	}
-	.scroll-down{
-		position: absolute;
-		bottom: 40px;
-		left: -50px;
-		transform: rotate(-90deg);
-		color: #919eb1;
-		font-size: 12px;
-		font-weight: 500;
-		line-height: 27px;
-		letter-spacing: -0.3px;
-		padding-left: 40px;
-	}
-	.scroll-down:before{
-		content: '';
-		width: 28px;
-	    height: 28px;
-	    background: url(../images/arrow.svg) no-repeat;
-	    position: absolute;
-	    left: 0;
-	    top: calc(50% - 7px);
-	    transform: rotate(90deg);
-	}
 	@media screen and (max-width: 1024px){
 		.title-img{
 			right: -50px;
@@ -394,9 +370,6 @@
 		}
 		.title-img{
 			right: 0;
-		}
-		.scroll-down{
-			display: none;
 		}
 		h1{
 			font-size: 48px;
@@ -415,7 +388,6 @@
 		.info-box{
 			bottom: 15px;
 		}
-
 	}
 	@media screen and (max-width: 480px){
 		h1{
@@ -643,7 +615,6 @@
 		.apartments .form .search{
 			width: 275px;
 		}
-		
 	}
 	@media screen and (max-width: 480px){
 		.apartments h2{

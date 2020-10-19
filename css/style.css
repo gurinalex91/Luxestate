@@ -294,6 +294,10 @@
 		line-height: 27px;
 		letter-spacing: -0.45px;
 		position: relative;
+		transition: all 0.3s ease;
+	}
+	.info:hover{
+		color: #fff;
 	}
 	.info-phone{
 		margin-right: -4px;
@@ -337,9 +341,10 @@
 	    line-height: 27px;
 	    letter-spacing: -0.38px;
 	    border-radius: 5px 0 0 5px;
-	    width: 365px;
+		width: 365px;
+		box-shadow: 1px 1px 3px;
 	}
-	.button-yellow{
+	.form-btn{
 		border: none;
 		outline: none;
 		background: #ffcc01;
@@ -351,8 +356,9 @@
 		border-radius: 0 5px 5px 0;
 		margin-left: -4px;
 		cursor: pointer;
+		box-shadow: 1px 1px 3px  #919eb1;
 	}
-	.button-yellow:hover{
+	.form-btn:hover{
 		color: #fff
 	}
 	.scroll-down{
@@ -434,7 +440,7 @@
 			width: 60%;
 			border: 1px solid #919eb1;
 		}
-		.title .form .button-yellow{
+		.title .form .form-btn{
 			padding: 21px 30px 25px;
 		}
 		.title .wrapper {
@@ -454,7 +460,7 @@
    		.title .form .search{
    			padding: 15px 0 15px 35px;
    		}
-   		.title .form .button-yellow{
+   		.title .form .form-btn{
 			padding: 16px 20px 16px;
 		}
 		.title .form{
@@ -670,7 +676,7 @@
 			background: url(../images/search.svg) no-repeat 13px 50% #ffffff;
    			padding: 15px 0 15px 40px;
 		}
-		.form .button-yellow{
+		.form .form-btn{
 			padding: 15px 20px 15px;
 		}
 	}

@@ -1,23 +1,23 @@
 $(document).ready(function() {
   $('.header_burger').click(function(event) {
-    $('.header_burger, .header_menu') .toggleClass('active');
+    $('.header_burger, .header_menu, .header_buttons') .toggleClass('active');
     $('body') .toggleClass('lock');
   });
 });
-$(window).scroll(testScroll);
-var viewed = false;
+$(window).scroll(counterScroll);
+let viewed = false;
 
 function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+    const docViewTop = $(window).scrollTop();
+    const docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+    const elemTop = $(elem).offset().top;
+    const elemBottom = elemTop + $(elem).height();
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
-function testScroll() {
+function counterScroll() {
   if (isScrolledIntoView($(".counter")) && !viewed) {
       viewed = true;
       $('.cntr').each(function () {

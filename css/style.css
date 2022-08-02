@@ -118,10 +118,6 @@ html, body {
     h2 {
         font-size: 32px;
     }
-
-    body {
-        text-align: center;
-    }
     .wrapper {
         padding: 0 1rem;
     }
@@ -321,7 +317,7 @@ html, body {
     letter-spacing: -1.54px;
     margin-right: 500px;
     padding-top: 150px;
-    text-shadow: 0 0 2px #f6f5f4;
+    text-shadow: 2px 2px 10px #f6f5f4;
 }
 
 .info-box {
@@ -395,112 +391,76 @@ html, body {
     margin-left: -4px;
     cursor: pointer;
     box-shadow: 1px 1px 3px #919eb1;
+    color: #1f373d;
 }
 
 .form-btn:hover {
     color: #fff
 }
 
-@media screen and (max-width: 1024px) {
-    .title-img {
-        right: -50px;
+@media screen and (max-width: 992px) {
+    .main-title{
+        margin-right: auto;
+    }
+    .form-btn {
+        padding: 10px 30px;
+    }
+    .form .search{
+        padding: 10px 0 10px 57px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .title-img, .title-img img {
-        width: 100%;
-    }
-
-    .title-img {
-        right: 0;
-    }
-
-    h1 {
+    .main-title {
         font-size: 48px;
-        width: 460px;
-        top: 25%;
-    }
-
-    .title .form {
-        bottom: 20%;
+        width: 100%;
     }
 
     .info {
         padding: 15px 30px 15px 90px;
     }
-
-    .title .wrapper {
-        padding-bottom: 470px;
-    }
-
-    .info-box {
-        bottom: 15px;
-    }
 }
 
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 40px;
-        width: 100%;
-        top: 15%;
-        line-height: 45px;
-        text-align: left;
+@media screen and (max-width: 576px) {
+    .title .wrapper{
+        height: 500px;
     }
-
-    .title-img {
-        position: relative;
+    .main-title {
+        font-size: 40px;
+        line-height: 45px;
+        text-align: center;
+        padding-top: 100px;
     }
 
     .info-box {
         position: static;
+        padding: 0 30px;
     }
 
     .info {
         margin: 0;
         display: block;
         text-align: center;
+        padding: 10px 30px;
     }
-
-    .title .form .search {
-        width: 60%;
-        border: 1px solid #919eb1;
-    }
-
-    .title .form .form-btn {
-        padding: 21px 30px 25px;
-    }
-
-    .title .wrapper {
-        padding-bottom: 0;
+    .info:before{
+        left: 0;
     }
 
     .title .form {
-        position: static;
-        margin: 10px auto;
+        width: 100%;
+        margin: 60px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .form-btn {
+        width: 30%;
+        padding: 10px;
+    }
+    .form .search{
+        width: 70%;
     }
 }
-
-@media screen and (max-width: 320px) {
-    h1 {
-        font-size: 36px;
-        top: 20%;
-        line-height: 30px;
-    }
-
-    .title .form .search {
-        padding: 15px 0 15px 35px;
-    }
-
-    .title .form .form-btn {
-        padding: 16px 20px 16px;
-    }
-
-    .title .form {
-        left: calc(50% - 140px);
-    }
-}
-
 /*statistics*/
 .statistics {
     padding: 140px 0 80px;
@@ -749,17 +709,6 @@ html, body {
     }
 }
 
-@media screen and (max-width: 320px) {
-    .form .search {
-        background: url(../images/search.svg) no-repeat 13px 50% #ffffff;
-        padding: 15px 0 15px 40px;
-    }
-
-    .form .form-btn {
-        padding: 15px 20px 15px;
-    }
-}
-
 /*how it works*/
 .how-it-works {
     padding: 50px 0 90px;
@@ -885,16 +834,6 @@ html, body {
     .step p {
         width: 100%;
         padding: 0;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .step .big {
-        margin-left: -180px;
-    }
-
-    .step:first-child .big {
-        margin-left: -200px;
     }
 }
 

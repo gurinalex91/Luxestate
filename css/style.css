@@ -569,20 +569,31 @@ html, body {
     padding: 60px 0 80px;
 }
 
-.apartments h2 {
+.apartments .section-title {
     width: 450px;
     margin-bottom: 80px;
 }
 
 .apartments .cards {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .card-item {
     box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
     margin-bottom: 35px;
+    transition: all 0.3s linear;
 }
-
+.card-item:hover{
+    box-shadow: 5px 5px 10px rgba(23, 44, 51, 0.5);
+    transform: scale(1.1);
+}
+.card-item img{
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+}
 .card-body {
     background: #fff;
     padding: 25px 0 25px 25px;

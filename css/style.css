@@ -721,6 +721,9 @@ html, body {
     .apartments .form{
         width: 100%;
     }
+    .apartments-bottom-btn{
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -748,71 +751,90 @@ html, body {
     padding: 50px 0 90px;
 }
 
-.how-it-works h2 {
+.how-it-works .section-title {
     margin-bottom: 25px;
 }
 
-.how-it-works .wrapper > p {
+.description {
     width: 360px;
     margin-bottom: 70px;
 }
-
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
 .step {
+    display: block;
     box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
     overflow: hidden;
     padding-bottom: 50px;
+    transition: all 0.3s linear;
 }
 
-.step .big {
+.step .big-number {
     font-size: 150px;
     font-weight: 600;
     margin-top: -50px;
     margin-left: -35px;
     display: block;
+    transition: all 0.3s linear;
 }
 
-.step h5 {
+.card-title {
     font-size: 18px;
     font-weight: 600;
     line-height: 63px;
     letter-spacing: -0.45px;
+    transition: all 0.3s linear;
 }
 
-.step h5 > span {
+.card-title > span {
     margin: 0 15px 0 40px;
 }
 
-.step p {
-    width: 220px;
-    padding: 0 70px;
+.card-text {
+    padding: 0 40px;
+    transition: all 0.3s linear;
 }
 
-.step a {
-    margin-left: 75px;
+.card-link {
+    margin: 20px auto 0;
+    text-align: center;
+    display: block;
+    width: 50%;
     padding-bottom: 12px;
     font-size: 13px;
     font-weight: 600;
     line-height: 30px;
     letter-spacing: -0.33px;
     border-bottom: 3px solid #1f373d;
+    transition: all 0.3s linear;
 }
 
 .step:hover {
     background: #ffcc01;
 }
 
-.step:hover .big, .step:hover h5, .step:hover p, .step:hover a {
+.step:hover .big-number,
+.step:hover .card-title,
+.step:hover .card-text,
+.step:hover .card-link {
     color: #fff;
 }
 
-.step:hover a {
+.step:hover .card-link {
     border-bottom: 3px solid #fff;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     .step {
         flex-basis: 45%;
-        margin: 0 15px 30px;
     }
 }
 
@@ -821,53 +843,44 @@ html, body {
         padding: 30px 0 30px;
     }
 
-    .how-it-works h2 {
+    .how-it-works .section-title {
         margin-bottom: 5px;
+        text-align: center;
     }
 
     .how-it-works .wrapper > p {
         margin-bottom: 30px;
+        width: 100%;
+        text-align: justify;
     }
 
-    .how-it-works .flexbox {
-        flex-wrap: wrap;
-        justify-content: center;
+    .step {
+        flex-basis: 100%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .how-it-works .flexbox {
-        flex-direction: column;
-    }
-
-    .how-it-works .wrapper > p {
+@media screen and (max-width: 576px) {
+    .cards{
+        display: block;
         width: 100%;
     }
-
-    .step .big {
-        margin-left: -280px;
+    .description {
+        width: 100%;
+        padding: 0;
     }
-
+    .card-title{
+        text-align: center;
+    }
     .step {
         width: 100%;
         margin: 0 0 15px;
     }
 
-    .step a {
-        margin: 0;
-    }
-
-    .step:first-child .big {
-        margin-left: -310px;
-    }
-
-    .step h5 > span {
+    .card-title > span {
         margin: 0 15px;
     }
-
-    .step p {
-        width: 100%;
-        padding: 0;
+    .card-text{
+        padding: 15px;
     }
 }
 

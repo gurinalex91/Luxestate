@@ -38,7 +38,7 @@ function counterScroll() {
         margin:30,
         nav:false,
         dots:false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         responsiveClass: true,
@@ -47,11 +47,11 @@ function counterScroll() {
                 items:1,
                 dots:true
             },
-            768:{
+            576:{
                 items:2,
                 dots:true
             },
-            1024:{
+            992:{
                 items:3
             }
         }

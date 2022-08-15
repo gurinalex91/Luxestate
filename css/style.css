@@ -57,18 +57,18 @@ a {
 }
 
 /*main*/
-*{
+* {
     box-sizing: border-box;
 }
+
 body {
     color: #1f373d;
     font-family: "Montserrat";
 }
 
 .wrapper {
-    max-width: 1120px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 6rem;
 }
 
 .flexbox {
@@ -113,24 +113,27 @@ html, body {
 @media screen and (max-width: 1200px) {
     .wrapper {
         max-width: 100%;
-        padding: 0 3rem;
+        padding: 0 2rem;
     }
 }
+
 @media screen and (max-width: 768px) {
     .section-title {
         width: 100% !important;
         text-align: center;
         margin-right: 0;
     }
+
     .wrapper {
         max-width: 100%;
-        padding: 0 2rem;
     }
 }
+
 @media screen and (max-width: 576px) {
     .section-title {
         font-size: 32px;
     }
+
     .wrapper {
         padding: 0 1rem;
     }
@@ -141,7 +144,7 @@ html, body {
     padding: 37px 0;
 }
 
-.header-logo{
+.header-logo {
     font-size: 25px;
     font-weight: 600;
     line-height: 27px;
@@ -237,7 +240,7 @@ html, body {
     }
 
     .header_menu,
-    .header_buttons{
+    .header_buttons {
         position: fixed;
         top: -100%;
         left: 0;
@@ -248,16 +251,20 @@ html, body {
         overflow: auto;
         display: block;
     }
-    .header_menu{
+
+    .header_menu {
         padding: 60px 0 0 0;
     }
+
     .header_menu.active {
         top: 0;
     }
-    .header_buttons.active{
+
+    .header_buttons.active {
         top: 300px;
         text-align: center;
     }
+
     .header {
         position: fixed;
         top: 0;
@@ -318,10 +325,11 @@ html, body {
 .title .wrapper {
     position: relative;
     height: 630px;
-    background: url("../images/Path.jpg") no-repeat right center;
-    background-size: 960px 630px;
 }
-
+.title .title-wrapper{
+    position: absolute;
+    z-index: 2;
+}
 .main-title {
     width: 600px;
     font-size: 62px;
@@ -333,6 +341,21 @@ html, body {
     text-shadow: 2px 2px 10px #f6f5f4;
 }
 
+.title .image-inner {
+    position: relative;
+    right: -60px;
+    top: 0;
+    width: 90%;
+    margin-left: auto;
+}
+
+.image-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleY(1.008);
+}
+
 .info-box {
     position: absolute;
     bottom: 0;
@@ -342,7 +365,7 @@ html, body {
 }
 
 .info {
-    padding: 0 50px 0 115px;
+    padding: 0 50px 0 95px;
     font-size: 18px;
     font-weight: 600;
     line-height: 27px;
@@ -413,13 +436,15 @@ html, body {
 }
 
 @media screen and (max-width: 992px) {
-    .main-title{
+    .main-title {
         margin-right: auto;
     }
+
     .form-btn {
         padding: 10px 30px;
     }
-    .form .search{
+
+    .form .search {
         padding: 10px 0 10px 57px;
     }
 }
@@ -436,9 +461,10 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
-    .title .wrapper{
+    .title .wrapper {
         height: 500px;
     }
+
     .main-title {
         font-size: 40px;
         line-height: 45px;
@@ -457,7 +483,8 @@ html, body {
         text-align: center;
         padding: 10px 30px;
     }
-    .info:before{
+
+    .info:before {
         left: 0;
     }
 
@@ -467,14 +494,17 @@ html, body {
         display: flex;
         justify-content: center;
     }
+
     .form-btn {
         width: 30%;
         padding: 10px;
     }
-    .form .search{
+
+    .form .search {
         width: 70%;
     }
 }
+
 /*statistics*/
 .statistics {
     padding: 140px 0 80px;
@@ -484,9 +514,11 @@ html, body {
     align-items: flex-start;
     gap: 50px;
 }
-.article{
+
+.article {
     flex: 0 1 50%;
 }
+
 .counter {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -525,17 +557,21 @@ html, body {
     .statistics {
         padding: 80px 0;
     }
+
     .statistics .wrapper {
         align-items: center;
     }
+
     .statistics .article p {
         margin-top: 20px;
     }
+
     .counter-item {
         padding: 25px 0;
         min-width: 150px;
     }
-    .counter{
+
+    .counter {
         gap: 15px;
     }
 }
@@ -549,14 +585,17 @@ html, body {
         flex-direction: column;
         gap: 30px;
     }
-    .article{
+
+    .article {
         text-align: justify;
     }
-    .counter{
+
+    .counter {
         width: 100%;
         gap: 30px;
         justify-content: center;
     }
+
     .counter-item {
         padding: 50px 0;
         min-width: 200px;
@@ -564,9 +603,10 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
-    .counter{
+    .counter {
         gap: 10px;
     }
+
     .counter-item {
         padding: 35px 0;
         min-width: 100%;
@@ -596,15 +636,18 @@ html, body {
     transition: all 0.3s linear;
     overflow: hidden;
 }
-.card-item:hover{
+
+.card-item:hover {
     box-shadow: 5px 5px 10px rgba(23, 44, 51, 0.5);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-.card-item img{
+
+.card-item img {
     width: 100%;
     height: 380px;
     object-fit: cover;
 }
+
 .card-body {
     background: #fff;
     padding: 25px 0 25px 25px;
@@ -663,7 +706,7 @@ html, body {
 .apartments-bottom-btn {
     background: #fff;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 27px;
     letter-spacing: -0.38px;
     text-align: center;
@@ -686,26 +729,33 @@ html, body {
     .apartments .section-title {
         margin-bottom: 30px;
     }
+
     .apartments .cards {
         grid-template-columns: repeat(2, 1fr);
     }
-    .card-item img{
+
+    .card-item img {
         height: 250px;
     }
-    .bottom-block{
+
+    .bottom-block {
         justify-content: space-between;
     }
-    .apartments .form{
+
+    .apartments .form {
         width: 65%;
         display: flex;
     }
-    .apartments .search{
+
+    .apartments .search {
         width: 70%;
     }
-    .apartments .form-btn{
+
+    .apartments .form-btn {
         width: 30%;
     }
-    .apartments-bottom-btn{
+
+    .apartments-bottom-btn {
         padding: 10px 15px;
     }
 }
@@ -719,14 +769,16 @@ html, body {
         display: none;
     }
 
-    .bottom-block{
+    .bottom-block {
         flex-direction: column;
         gap: 20px;
     }
-    .apartments .form{
+
+    .apartments .form {
         width: 100%;
     }
-    .apartments-bottom-btn{
+
+    .apartments-bottom-btn {
         margin: 0;
     }
 }
@@ -735,7 +787,8 @@ html, body {
     .apartments .cards {
         display: block;
     }
-    .apartments .card-item{
+
+    .apartments .card-item {
         margin-bottom: 20px;
     }
 
@@ -746,7 +799,8 @@ html, body {
     .apartments .card-body {
         padding: 10px;
     }
-    .apartments-bottom-btn{
+
+    .apartments-bottom-btn {
         width: 100%;
     }
 }
@@ -764,11 +818,13 @@ html, body {
     width: 360px;
     margin-bottom: 70px;
 }
+
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
+
 .step {
     display: block;
     box-shadow: 0 2px 25px rgba(23, 44, 51, 0.15);
@@ -833,11 +889,12 @@ html, body {
 }
 
 @media screen and (max-width: 992px) {
-    .cards{
+    .cards {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .step {
         flex-basis: 45%;
     }
@@ -865,17 +922,20 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
-    .cards{
+    .cards {
         display: block;
         width: 100%;
     }
+
     .description {
         width: 100%;
         padding: 0;
     }
-    .card-title{
+
+    .card-title {
         text-align: center;
     }
+
     .step {
         width: 100%;
         margin: 0 0 15px;
@@ -884,7 +944,8 @@ html, body {
     .card-title > span {
         margin: 0 15px;
     }
-    .card-text{
+
+    .card-text {
         padding: 15px;
     }
 }
@@ -898,9 +959,12 @@ html, body {
     width: 360px;
     margin: 30px 0 55px;
 }
-.services .image-inner{
-    flex: 0 1 70%;
+
+.services .image-inner {
+    flex: 0 1 60%;
+    height: 620px;
 }
+
 .services .image {
     margin: 0 120px 0 -110px;
     width: 100%;
@@ -911,26 +975,32 @@ html, body {
 .services .subtitle {
     margin: 0 0 15px 5px;
 }
-.services .text-container{
-    flex: 0 0 30%;
+
+.services .text-container {
+    flex: 0 0 40%;
 }
+
 .services-text {
     margin-bottom: 30px;
 }
 
 @media screen and (max-width: 992px) {
-    .services .flexbox{
+    .services .flexbox {
         gap: 20px;
     }
-    .services .image-inner{
+
+    .services .image-inner {
         flex: 0 0 50%;
     }
+
     .services .image {
         margin: 0;
     }
-    .services .text-container{
+
+    .services .text-container {
         flex: 0 0 50%;
     }
+
     .services .description {
         margin: 30px 0 10px;
     }
@@ -950,10 +1020,12 @@ html, body {
     .services .flexbox {
         flex-wrap: wrap;
     }
-    .services .image-inner{
+
+    .services .image-inner {
         flex: 0 0 100%;
         text-align: center;
     }
+
     .services .image {
         margin: 0 auto;
         width: 60%;
@@ -962,9 +1034,11 @@ html, body {
     .services .subtitle {
         margin: 0;
     }
-    .services .text-container{
+
+    .services .text-container {
         flex: 0 0 100%;
     }
+
     .services-text {
         margin-bottom: 15px;
         width: 100%;
@@ -988,12 +1062,15 @@ html, body {
     width: 365px;
     margin: 30px 0 50px;
 }
-.agents .owl-stage-outer{
+
+.agents .owl-stage-outer {
     padding: 5px;
 }
-.agents .socials{
+
+.agents .socials {
     flex: 0 0 30%;
 }
+
 .agents .social {
     width: 20px;
     height: 20px;
@@ -1029,23 +1106,27 @@ html, body {
 .agents .social-hz:hover {
     background-position: -47px -10px;
 }
-.agents .card-item{
+
+.agents .card-item {
     box-shadow: 0 2px 5px rgba(23, 44, 51, 0.15);
 }
-.agents .card-item:hover{
+
+.agents .card-item:hover {
     transform: scale(1);
     box-shadow: 0 5px 5px rgba(23, 44, 51, 0.5);
 }
 
-.agents .card-image{
+.agents .card-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all 0.3s linear;
 }
-.agents .card-item:hover .card-image{
+
+.agents .card-item:hover .card-image {
     transform: scale(1.05);
 }
+
 .agents .card-body {
     padding: 15px;
 }
@@ -1087,7 +1168,8 @@ html, body {
         width: 80%;
         margin: 0 auto;
     }
-    .agents .card-image{
+
+    .agents .card-image {
         object-fit: contain;
         max-height: 300px;
     }
@@ -1095,6 +1177,7 @@ html, body {
     .agents .description {
         width: 100%;
     }
+
     .agents .colored-font {
         font-size: 12px;
         line-height: 16px;
@@ -1107,8 +1190,20 @@ html, body {
     padding: 80px 0 10px;
 }
 
-.pos-rel {
+.adds .image-inner {
     position: relative;
+    flex: 0 0 60%;
+    height: 400px;
+}
+
+.adds .image-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adds .flexbox {
+    gap: 50px;
 }
 
 .adds .info-box {
@@ -1117,8 +1212,8 @@ html, body {
     padding-right: 0;
 }
 
-.adds p {
-    width: 465px;
+.adds .box-description {
+    flex: 0 1 40%;
 }
 
 .adds .second-box {
@@ -1129,12 +1224,12 @@ html, body {
     text-align: right;
 }
 
-.second-box .info {
-    right: -150px;
-    bottom: 15px;
+.second-box .info-box {
+    right: -50px;
+    bottom: -30px;
 }
 
-.button-dark {
+.button-more {
     padding: 30px 50px;
     background: #1f373d;
     color: #ffffff;
@@ -1142,15 +1237,16 @@ html, body {
     font-weight: 600;
     line-height: 27px;
     letter-spacing: -0.45px;
+    transition: all 0.3s linear;
 }
 
-.button-dark:hover {
+.button-more:hover {
     background: #fff;
     border: 1px solid #1f373d;
     color: #1f373d;
 }
 
-.third-box p {
+.third-box .text {
     margin-bottom: 70px;
 }
 
@@ -1162,13 +1258,47 @@ html, body {
     margin-bottom: 90px;
 }
 
-@media screen and (max-width: 1024px) {
-    .pos-rel {
-        margin: 0 15px;
+@media screen and (max-width: 1250px) {
+    .second-box .info-box {
+        right: calc(50% - 173px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .adds .flexbox {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .image-inner {
+        margin: 0 auto;
+        max-height: 400px;
+        overflow: hidden;
+        width: 80%;
+    }
+
+    .adds .info-box {
+        bottom: 0;
     }
 
     .adds p {
         width: 100%;
+    }
+
+    .third-box .text {
+        margin: 0;
+    }
+
+    .third-box {
+        position: relative;
+        padding-bottom: 120px;
+    }
+
+    .button-more {
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 116px);
     }
 }
 
@@ -1177,35 +1307,26 @@ html, body {
         padding: 30px 0 10px;
     }
 
-    .first-box, .second-box {
+    .first-box {
         display: none;
     }
 
-    .third-box {
-        flex-wrap: wrap;
+    .adds .flexbox {
+        margin-bottom: 50px;
+    }
+
+    .adds .image-inner {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .second-box {
+        display: none;
     }
 
     .adds .flexbox {
         margin-bottom: 30px;
-    }
-
-    .third-box .pos-rel {
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .third-box .pos-rel > img {
-        width: 100%;
-    }
-
-    .third-box p {
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .third-box p {
-        width: 100%;
     }
 }
 

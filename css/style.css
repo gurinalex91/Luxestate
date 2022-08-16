@@ -540,7 +540,6 @@ html, body {
         left: 0;
         width: 100%;
     }
-
 }
 
 /*statistics*/
@@ -1370,12 +1369,12 @@ html, body {
 }
 
 /*footer*/
-footer {
+.footer {
     padding: 60px 0 90px;
     background: #1f373d;
 }
 
-footer h2 {
+.footer .section-title {
     color: #fff;
 }
 
@@ -1419,7 +1418,7 @@ footer h2 {
     transform: rotate(45deg);
 }
 
-#button-arrow {
+.footer .submit-btn{
     padding: 26px 45px;
     background: #fff;
     border: none;
@@ -1443,7 +1442,7 @@ footer h2 {
     letter-spacing: -0.63px;
 }
 
-.footer-bottom p {
+.footer .copy-text {
     width: 140px;
     color: #ffffff;
     font-family: "Work Sans";
@@ -1454,7 +1453,7 @@ footer h2 {
     margin-top: 70px;
 }
 
-.footer-bottom > div > ul > li {
+.footer .menu-title {
     color: #919eb1;
     font-size: 13px;
     font-weight: 400;
@@ -1464,18 +1463,18 @@ footer h2 {
 
 }
 
-.footer-bottom ul.flexbox {
+.footer-menu-list {
     align-items: flex-start;
 }
 
-.footer-bottom ul a {
+.footer .menu-link {
     color: #ffffff;
     font-size: 13px;
     font-weight: 400;
     line-height: 27px;
 }
 
-.footer-bottom ul > li > ul {
+.footer-bottom .menu-list {
     margin-top: 40px;
 }
 
@@ -1483,18 +1482,58 @@ footer h2 {
     align-items: flex-start;
 }
 
-.footer-bottom ul a:hover {
+.footer .menu-link:hover {
     color: #919eb1;
 }
 
-@media screen and (max-width: 1024px) {
-    .footer-bottom > div > ul > li {
+@media screen and (max-width: 992px) {
+    .footer-top{
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        margin: 0 auto 30px;
+    }
+    .footer .menu-title {
         margin-right: 80px;
+    }
+    .footer .form{
+        width: 100%;
+    }
+    .footer .subscribe-input{
+       width: 70%;
+    }
+    .footer-bottom{
+        flex-direction: column-reverse;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .copy{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .footer .copy-text{
+        margin: 0;
+        width: auto;
+    }
+    .footer-menu{
+        width: 100%;
+    }
+    .footer-menu-list{
+        justify-content: space-around;
+        text-align: center;
+    }
+    .footer .menu-title{
+        margin: 0;
+    }
+    .footer{
+        padding-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    footer {
+    .footer {
         padding: 30px 0 30px;
     }
 
@@ -1502,83 +1541,33 @@ footer h2 {
         padding-bottom: 10px;
         margin-bottom: 20px;
     }
-
-    .subscribe-input {
-        width: 190px;
+    .footer .form{
+        display: flex;
     }
-
-    .footer-bottom p {
-        margin-top: 20px;
-    }
-
-    .footer-bottom > div > ul > li {
-        margin-right: 25px;
-    }
-
-    .footer-bottom ul > li > ul {
-        margin-top: 15px;
+    .footer .submit-btn {
+        width: 30%;
+        margin: 0;
     }
 }
 
-@media screen and (max-width: 480px) {
-    #button-arrow, .button-arrow {
-        display: none;
-    }
-
-    .subscribe-input {
+@media screen and (max-width: 576px) {
+    .footer .subscribe-input,
+    .footer .submit-btn{
         padding: 10px;
     }
 
-    .footer-bottom {
-        flex-direction: column-reverse;
-    }
-
-    .footer-bottom > div {
-        margin: auto;
-    }
-
-    .footer-bottom > div > ul > li {
-        margin-right: 20px;
-    }
-
-    footer .footer-top a {
-        padding: 10px 10px;
-    }
-
-    footer h2 {
+    .footer .section-title {
         font-size: 30px;
     }
-}
-
-@media screen and (max-width: 375px) {
-    footer h2 {
-        font-size: 24px;
+    .footer .copy-text {
+        width: 50%;
     }
-
-    .footer-bottom .flexbox {
-        flex-wrap: wrap;
-        justify-content: space-around;
+    .footer-menu-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
-
-    .footer-bottom > div > ul > li {
-        width: 35%;
-    }
-
-    .footer-bottom ul > li > ul {
-        margin: 0 0 15px;
-    }
-
-    .subscribe-input {
-        padding: 10px 3px;
-    }
-
-    footer .form {
-        margin-left: 5px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    footer .form {
-        margin-left: 0;
+    .footer .menu-list{
+        margin: 0;
     }
 }

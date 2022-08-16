@@ -1373,7 +1373,14 @@ html, body {
     padding: 60px 0 90px;
     background: #1f373d;
 }
-
+.footer .logo{
+    display: block;
+    transition: all 0.3s ease-out;
+}
+.footer .logo:hover{
+    transform: scale(1.1);
+    text-shadow: 1px 1px 3px rgba(256, 256, 256, 0.5) ;
+}
 .footer .section-title {
     color: #fff;
 }
@@ -1460,7 +1467,7 @@ html, body {
     line-height: 27px;
     text-transform: uppercase;
     margin-right: 120px;
-
+    text-transform: uppercase;
 }
 
 .footer-menu-list {
@@ -1472,6 +1479,7 @@ html, body {
     font-size: 13px;
     font-weight: 400;
     line-height: 27px;
+    transition: all 0.2s linear;
 }
 
 .footer-bottom .menu-list {

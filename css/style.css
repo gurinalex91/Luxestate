@@ -1061,6 +1061,7 @@ html, body {
     .services .image-inner {
         flex: 0 0 100%;
         text-align: center;
+        height: 300px;
     }
 
     .services .image {
